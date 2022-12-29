@@ -4,52 +4,80 @@ import pytest
 
 @pytest.mark.letra_correcta
 def test_letras_correctas():
-    assert 'Z' == Letras(66582415).calcularLetra()
-    assert 'F' == Letras(86261461).calcularLetra()
-    assert 'V' == Letras('07716908').calcularLetra()
-    assert 'E' == Letras(34737037).calcularLetra()
-    assert 'Q' == Letras(43221731).calcularLetra()
-    assert 'Q' == Letras(49640019).calcularLetra()
-    assert 'P' == Letras(93835983).calcularLetra()
-    assert 'Z' == Letras(71874416).calcularLetra()
-    assert 'T' == Letras(95225497).calcularLetra()
-    assert 'D' == Letras(57984320).calcularLetra()
-    assert 'M' == Letras(59105244).calcularLetra()
-    assert 'E' == Letras(63741486).calcularLetra()
-    assert 'K' == Letras(33134166).calcularLetra()
-    assert 'F' == Letras('08492067').calcularLetra()
-    assert 'L' == Letras('09070460').calcularLetra()
+    assert 'Z' == Letras.calcular_letra(66582415)
+
+    assert 'F' == Letras.calcular_letra(86261461)
+
+    assert 'V' == Letras.calcular_letra('07716908')
+
+    assert 'E' == Letras.calcular_letra(34737037)
+
+    assert 'Q' == Letras.calcular_letra(43221731)
+
+    assert 'Q' == Letras.calcular_letra(49640019)
+
+    assert 'P' == Letras.calcular_letra(93835983)
+
+    assert 'Z' == Letras.calcular_letra(71874416)
+
+    assert 'T' == Letras.calcular_letra(95225497)
+
+    assert 'D' == Letras.calcular_letra(57984320)
+
+    assert 'M' == Letras.calcular_letra(59105244)
+
+    assert 'E' == Letras.calcular_letra(63741486)
+
+    assert 'K' == Letras.calcular_letra(33134166)
+
+    assert 'F' == Letras.calcular_letra('08492067')
+
+    assert 'L' == Letras.calcular_letra('09070460')
 
 
 @pytest.mark.letra_incorrecta
 def test_letras_incorrectas():
-    assert 'El DNI no cumple la longitud obligatoria de 8 digitos' == Letras(
-        27381).calcularLetra()
-    assert 'El DNI no cumple la longitud obligatoria de 8 digitos' == Letras(
-        11).calcularLetra()
-    assert 'El DNI no cumple la longitud obligatoria de 8 digitos' == Letras(
-        999203).calcularLetra()
-    assert 'El DNI no cumple la longitud obligatoria de 8 digitos' == Letras(
-        9283121).calcularLetra()
-    assert 'El DNI no cumple la longitud obligatoria de 8 digitos' == Letras(
-        888439).calcularLetra()
-    assert 'El DNI no cumple la longitud obligatoria de 8 digitos' == Letras(
-        10).calcularLetra()
-    assert 'El DNI no cumple la longitud obligatoria de 8 digitos' == Letras(
-        0).calcularLetra()
-    assert 'El DNI no cumple la longitud obligatoria de 8 digitos' == Letras(
-        38293).calcularLetra()
-    assert 'El DNI no cumple la longitud obligatoria de 8 digitos' == Letras(
-        99128).calcularLetra()
-    assert 'El DNI no cumple la longitud obligatoria de 8 digitos' == Letras(
-        83612).calcularLetra()
-    assert 'El DNI no cumple la longitud obligatoria de 8 digitos' == Letras(
-        1).calcularLetra()
-    assert 'El DNI no cumple la longitud obligatoria de 8 digitos' == Letras(
-        2).calcularLetra()
-    assert 'El DNI no cumple la longitud obligatoria de 8 digitos' == Letras(
-        293984).calcularLetra()
-    assert 'El DNI no cumple la longitud obligatoria de 8 digitos' == Letras(
-        4839201).calcularLetra()
-    assert 'El DNI no cumple la longitud obligatoria de 8 digitos' == Letras(
-        4832).calcularLetra()
+    assert 'El DNI no cumple la longitud obligatoria de 8 digitos' == Letras.calcular_letra(
+        27381)
+
+    assert 'El DNI no cumple la longitud obligatoria de 8 digitos' == Letras.calcular_letra(
+        11)
+
+    assert 'El DNI no cumple la longitud obligatoria de 8 digitos' == Letras.calcular_letra(
+        999203)
+
+    assert 'El DNI no cumple la longitud obligatoria de 8 digitos' == Letras.calcular_letra(
+        9283121)
+
+    assert 'El DNI no cumple la longitud obligatoria de 8 digitos' == Letras.calcular_letra(
+        888439)
+
+    assert 'El DNI no cumple la longitud obligatoria de 8 digitos' == Letras.calcular_letra(
+        10)
+
+    assert 'El DNI no cumple la longitud obligatoria de 8 digitos' == Letras.calcular_letra(
+        0)
+
+    assert 'El DNI no cumple la longitud obligatoria de 8 digitos' == Letras.calcular_letra(
+        38293)
+
+    assert 'El DNI no cumple la longitud obligatoria de 8 digitos' == Letras.calcular_letra(
+        99128)
+
+    assert 'El DNI no cumple la longitud obligatoria de 8 digitos' == Letras.calcular_letra(
+        83612)
+
+    assert 'El DNI no cumple la longitud obligatoria de 8 digitos' == Letras.calcular_letra(
+        1)
+
+    assert 'El DNI no cumple la longitud obligatoria de 8 digitos' == Letras.calcular_letra(
+        2)
+
+    assert 'El DNI no cumple la longitud obligatoria de 8 digitos' == Letras.calcular_letra(
+        293984)
+
+    assert 'El DNI no cumple la longitud obligatoria de 8 digitos' == Letras.calcular_letra(
+        4839201)
+
+    assert 'El DNI no cumple la longitud obligatoria de 8 digitos' == Letras.calcular_letra(
+        4832)
