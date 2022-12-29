@@ -5,13 +5,14 @@ class Letras:
     diccionarioLetras = dict(zip(length, tabla))
 
     def __init__(self, cadena):
-        self.cadena = str(cadena)
+        self.dni = str(cadena)
 
-    def calcularLetra(self):
-        if len(self.cadena) == 8:
-            self.cadena = int(self.cadena)
+    @staticmethod
+    def calcular_letra(self):
+        if len(self) == 8:
+            cadena = int(self)
             try:
-                return Letras.diccionarioLetras[self.cadena % len(Letras.tabla)]
+                return Letras.diccionarioLetras[cadena % len(Letras.tabla)]
             except:
                 'Error calculando la letra'
         else:
