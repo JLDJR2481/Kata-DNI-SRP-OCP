@@ -4,23 +4,24 @@ class DNI:
         self.dni = cadena
 # Función para comprobar que el dni sea de longitud 8
 
+    @staticmethod
     def comprobar_long_dni(self):
         error = ""
-        if len(self.dni) != 8:
-            if len(self.dni) > 8:
+        if len(self) != 8:
+            if len(self) > 8:
                 error = 'Error: El DNI está por encima de la longitud reglamentaria'
                 return error
-            elif len(self.dni) < 8:
+            elif len(self) < 8:
                 error = 'Error: El DNI está por debajo de la longitud reglamentaria'
                 return error
         else:
             return True
 
 # Función para comprobar que la sequencia del dni no tenga ningun caracter no aceptado. Para caracter no aceptado se entiende cualquier letra alfabetica que esté entre los números
-
+    @staticmethod
     def comprobar_car_dni(self):
         error = ""
-        lista_cadena = list(self.dni)
+        lista_cadena = list(self)
         for i in lista_cadena:
             if i.isdigit():
                 continue
@@ -30,7 +31,7 @@ class DNI:
         return True
 
 # Función que combina las funciones que detectan la longitud y los caracteres
-
+    @staticmethod
     def comprobar_dni(self):
         if DNI.comprobar_long_dni(self) == True and DNI.comprobar_car_dni(self) == True:
             return 'DNI aceptado: Longitud y caracteres correctos'
