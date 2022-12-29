@@ -2,7 +2,7 @@ from src.letras import Letras
 import pytest
 
 
-@pytest.mark.letraCorrecta
+@pytest.mark.letra_correcta
 def test_letras_correctas():
     assert 'Z' == Letras(66582415).calcularLetra()
     assert 'F' == Letras(86261461).calcularLetra()
@@ -21,7 +21,7 @@ def test_letras_correctas():
     assert 'L' == Letras('09070460').calcularLetra()
 
 
-@pytest.mark.letraIncorrecta
+@pytest.mark.letra_incorrecta
 def test_letras_incorrectas():
     assert 'El DNI no cumple la longitud obligatoria de 8 digitos' == Letras(
         27381).calcularLetra()
