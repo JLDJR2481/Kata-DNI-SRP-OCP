@@ -43,3 +43,6 @@ def printar_dni_y_letra():
         print(mensaje.format(letra=letra_asignada))
         mensaje_dni = "El DNI sería: {dni}{letra}"
         print(mensaje_dni.format(dni=dni, letra=letra_asignada))
+
+
+printar_dni_y_letra()
