@@ -28,14 +28,12 @@ Antes de empezar, debemos saber que para la asignación de las letras, el Estado
 Tras conocer la tabla de asignación de letras, el algoritmo que asigna la letra es muy simple, aunque tiene ciertos requisitos:
 
 - Primero de todo, la longitud de la cadena sin la letra debe ser de 8 carácteres. Si el primer numero es 0, tambien cuenta como 1 caracter
-- Además, solo pueden asignarse letras al final de la cadena. Si el algoritmo detecta un carácter no aceptado (normalmente letras), dará error.
+- Además, solo pueden asignarse letras al final de la cadena. Si el algoritmo detecta un carácter no aceptado (normalmente letras), no se ejecutará dicho algoritmo.
 
 Tras pasar los requisitos, se aplica un algoritmo muy simple, dividir la cadena entre la longitud de la tabla(23). Tras dividir, se recoge el resto y se le asigna la letra correspondiente.
 
-
 ## Funcionamiento
-
-Para ejecutar el codigo, simplemente hay que ejecutar el fichero main.py, el cual recoge un input, verifica si cumple los requisitos necesarios para calcular la letra y, si los cumple, otorga la letra correspondiente.
+Para ejecutar el codigo, simplemente hay que ejecutar el archivo main.py, ubicado en el fichero src, el cual recoge un input, verifica si cumple los requisitos necesarios para calcular la letra y, si los cumple, otorga la letra correspondiente.
 
 ## Información extra
 Este kata se ha trabajado y practicado el método TDD (Test Driven Domain), que consiste en la programación basandose en casos test previamente planteados, y las clases, siendo una introducción y práctica de las mismas
