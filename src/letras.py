@@ -9,7 +9,7 @@ class Letras:
 
     @staticmethod
     def calcular_letra(self):
-        if len(self) == 8:
+        if len(str(self)) == 8:
             cadena = int(self)
             try:
                 return Letras.diccionarioLetras[cadena % len(Letras.tabla)]
